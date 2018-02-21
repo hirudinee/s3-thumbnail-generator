@@ -27,7 +27,6 @@ exports.handler = function (event, context, callback) {
     let dstKey = "thumb-" + srcKey;
 
     // Infer the image type.
-    
     let typeMatch = srcKey.match(/\.([^.]*)$/);
     if (!typeMatch) {
         callback("Could not determine the image type.");
